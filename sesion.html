@@ -1,0 +1,133 @@
+  <!DOCTYPE html>
+  <html>
+      <link rel="shortcut icon" href=favicon.ico>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <head>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Import style.css-->
+      <link type="text/css" rel="stylesheet" href="css/style.css"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+     <!-- #########################################################
+     ############### BACKGROUND [FONDO] ##################### -->
+      <body style="
+      background: radial-gradient(circle, #00cfff, #005cff, #005cff);
+      background: -webkit-radial-gradient(circle, #00cfff, #005cff, #005cff);
+      background: -moz-radial-gradient(circle, #00cfff, #005cff, #005cff);
+      background-image: url(img/Fondo_Catedral.png);
+      ">
+
+       <!-- #########################################################
+     ############### FIREBASE-ANGULARJS [CONEXIONES] ##################### -->
+  <nav>
+    <div class="nav-wrapper grey darken-4">
+      <img class="responsive-img" src="" height="250" width="200"/> 
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="iniciosesion.html">Iniciar Sesión</a></li>
+        <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+        <li><a href="registro.html">Registrate</a></li></li>
+          
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="iniciosesion.html">Iniciar Sesión</a></li>
+        <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+        <li><a href="registro.html">Registrate</a></li></li>
+        
+  </ul>
+
+   
+<!-- #########################################################
+     ############### 1RA SECCIÓN [INICIO DE SESION] ##################### -->
+<br><br><br><br><br><br><br><br>
+
+<div class="row">
+    <div class="col s12 m4 offset-m4">
+      <div clas="card">
+        <div class="card-action grey darken-4 white-text">
+          <center><img src="img/user.png" alt="" class="circle responsive-img" width="100" height="150">
+          <div class="grey lighten-2 card-content">
+            <div class="from-field">
+               <label for="username" id="username">Nombre de usuario ó email</label>
+               <input type="text" id="username">
+        </div><br>
+    
+        <div class="from-field">
+               <label for="password" id="pass">Contraseña</label>
+               <input type="password" id="password">
+               </div><br>
+
+        <div class="from-field">
+               <button ng-click="authService()" class="btn-large waves-effect light-blue darken-4" style="width:100%;">Entrar</button>
+          
+          
+
+
+
+<!-- #########################################################
+     ######################## FOOTER ######################### -->
+
+<center>
+        <footer class="page-footer grey darken-4">
+                <ul>
+                  <li>  <a href="https://www.facebook.com/ramzes.rosales/" target="_blank"><img src="img/logo-facebook.png" width="60" height="60" onmouseover="this.src='img/logo-facebook2.png';" onmouseout="this.src='img/logo-facebook.png';"/></a>
+                        <a href="https://www.instagram.com/ramzesrosales/" target="_blank"><img src="img/logo-instagram.png" width="60" height="60" onmouseover="this.src='img/logo-instagram2.png';" onmouseout="this.src='img/logo-instagram.png';"/></a>
+                        <a href="https://www.youtube.com/user/ramzchannel" target="_blank"><img src="img/youtube.png" width="60" height="60" onmouseover="this.src='img/youtube_1.png';" onmouseout="this.src='img/youtube.png';"/></a>
+                 </li>
+                </ul>
+              
+          <div class="footer-copyright">
+            <div class="container">
+            Copyright R.P. © 2018 
+            </div>
+          </div>
+      </center>
+
+      <!--JavaScript at end of body for optimized loading-->
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+      <script>
+          // Initialize Firebase
+          var config = {
+              apiKey: "AIzaSyAkv68i3g2GmYt9875WwsFrWC1RRP-ApSQ",
+              authDomain: "estacionamientorp.firebaseapp.com",
+              databaseURL: "https://estacionamientorp.firebaseio.com",
+              projectId: "estacionamientorp",
+              storageBucket: "estacionamientorp.appspot.com",
+              messagingSenderId: "438967791193"
+          };
+          firebase.initializeApp(config);
+</script>
+      <script src="js/materialize.js"></script>
+      <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.min.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+      <script>
+            $(document).ready(function(){
+              $('.sidenav').sidenav();
+               M.AutoInit();
+               $('.parallax').parallax();
+            });        
+      </script>
+ 
+    </body>
+  </html>
+        
+        

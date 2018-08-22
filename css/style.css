@@ -1,0 +1,70 @@
+.video{
+  background-color: #d0cdd4;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  max-width: 550px;
+  max-height: 190px;
+ 
+}
+
+.fondo {
+background-repeat: no-repeat;
+background-size: cover; 
+height:  0vh;
+background-position: center;
+}
+
+h6 {color: white}
+h6.a {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+h5 {color: white}
+h5.a {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+h4 {color: white}
+h4.a {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+h3 {color: white}
+h3.a {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+h2 {color: white}
+h2.a {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+h1 {color: white}
+h1.a {color: white; text-shadow: black 0.1em 0.1em 0.2em}
+
+.page-footer {
+background: #4586FF;
+color: #4586FF	;
+height: "100"
+
+
+}	
+
+.parallax-container {
+      height: "%100";
+    }
+
+body {
+  /* Location of the image */
+  background-image: url(img/Fondo_Catedral.png);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
